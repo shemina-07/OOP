@@ -1,14 +1,20 @@
 import java.io.*;
 import java.util.*;
 class reverse{
-public static void main(String[] args){
-int n,reverse,digit;
-reverse=0;
+public static void main(String[]args){
+int n,digit;
 
-System.out.println("Enter n");
-Scanner sc=new Scanner(System.in);
+Scanner sc=new Scanner (System.in);
+System.out.println("enter a number");
 n=sc.nextInt();
+int reversedNum=0;
 while(n!=0){
 digit=n%10;
-reversedNum=(reverse*10)+digit;
-n=n/10;
+ reversedNum=(reversedNum*10)+digit;
+n/=10;
+}
+System.out.println("reversed number is"+reversedNum);
+
+}
+}
+
